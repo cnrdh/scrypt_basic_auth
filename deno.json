@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "demo": "deno run --allow-net=:8000 demo.ts",
+    "test": "deno test mod_test.ts --allow-env=scrypt_basic_auth_users --coverage=.coverage && deno coverage .coverage"
+  }
+}
