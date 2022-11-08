@@ -11,7 +11,7 @@ Features:
 - 100% test coverage
 - Hash verification in WebAssembly via https://deno.land/x/scrypt
 
-Demo: demo.ts
+Demo (`username1` / `password1`): https://scrypt-basic-auth.deno.dev/
 
 ## Use
 
