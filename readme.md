@@ -47,12 +47,16 @@ const options = {
 const response = await scryptBasicAuth(request, options);
 ```
 
-## Users
+## Users and hash generation
 
 ### Env format
 
 The `scrypt_basic_auth_users` env variable must store users as a JSON array of
-[username, hash] tuples, ie. like `[["user1","hash1"]]`.
+[username, hash] tuples.
+
+```bash
+export scrypt_basic_auth_users='[["username","c2N…"]]'
+```
 
 To obtain a tuple, run:
 
@@ -61,14 +65,15 @@ $ deno run hash.ts user1 password1
 ["user1","c2…"]
 ```
 
-### Linux/bash
-
-```bash
-export scrypt_basic_auth_users='[["username","c2N…"]]'
-```
-
 ## Test
 
 ```sh
 $ deno task test
 ```
+
+## License
+
+[scrypt_basic_auth](https://github.com/cnrdh/scrypt_basic_auth) is
+[MIT](https://github.com/cnrdh/scrypt_basic_auth/blob/main/LICENSE) licensed and
+contains portions of code from
+[kt3k/basic_auth](https://github.com/kt3k/basic_auth) (also MIT).
