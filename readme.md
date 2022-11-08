@@ -20,7 +20,7 @@ Demo (`username1` / `password1`): https://scrypt-basic-auth.deno.dev/
 Allowed users are read from the environment variable `scrypt_basic_auth_users`:
 
 ```js
-import { scryptBasicAuth } from "./mod.ts";
+import { scryptBasicAuth } from "https://deno.land/x/scrypt_basic_auth@1.0.1/mod.ts";
 
 const scryptProtected = (request) => {
   const response = await scryptBasicAuth(request);
